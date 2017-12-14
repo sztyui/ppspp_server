@@ -1,0 +1,17 @@
+Milyen esetekben lehet hibás egy input fájl?
+ - Nincs a helyén (nem tudom megnyitni).
+ - A PUGIXML nem tudja betölteni.
+ 
+QR generálásnál felmerülő hibák:
+  - Hibás sor a konfigban : nem futhat tovább
+  - Ismeretlen érték a konfigban: nem futhat tovább
+  
+  
+nem futhat tovább : CONFIGERROR
+futhat tovább:
+  - a QR generátor szarta össze magát: CONFIGERROR
+    - leáll, szól, hogy nézze meg az admin
+  - a fájl nem QR-es : NOQR
+    - normálisan megy tovább, csak logol
+  - a fájl QR-es csak hibás : QRERROR
+    - errorba megy 
